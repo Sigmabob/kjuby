@@ -1,0 +1,69 @@
+.btn {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: red;
+    color: rgb(255, 255, 255);
+    /* Плавное изменение состояния */
+    transition: all 0.4s;
+}
+
+/* При наведении на элемент применить указанные свойства */
+.btn:hover {
+    background-color: orange;
+}
+
+/* При клике на элемент и пока не отпустили кнопку мыши применить указанные свойства */
+.btn:active {
+    /* масштаб */
+    scale: 0.5;
+}
+
+.list {
+    /* Убрать маркеры у списка */
+    list-style: none;
+}
+
+.form {
+    background-color: blue;
+    /* Чтобы форма занимала не всю ширину родителя а ровно столько места сколько нужно под ее содержимое устанавливаем: */
+    display: inline-block;
+    padding: 50px;
+    border-radius: 10px;
+    color: white;
+}
+
+.form-row {
+    margin-bottom: 20px;
+}
+
+.form-input {
+    /*Убрать рамку которая появляется когда поле в фокусе*/
+    outline: none;
+    border: none;
+    /*сделать нижнюю границу шириной в 2 пикселя сплошная прозрачная*/
+    border-bottom: 2px solid transparent;
+}
+
+/*когда поле находится в фокусе*/
+.form-input:focus {
+    /*стиль для нижней границы элемента*/
+    border-bottom: 2px dashed red;
+}
+
+/*Стили плейсхолдера*/
+.form-input::placeholder {
+    color: white;
+}
+
+.check-wrap {
+    margin-bottom: 10px;
+}
+
+/*стилизовать элемент span если он наодиться сразу после жлемента с классом check в состоянии checked
+*/
+
+
+.check:checked+span {
+    color: orange;
+}
